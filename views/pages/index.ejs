@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Prosta aplikacja</title>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/main.css" />
+</head>
+
+<body>
+  <div class="main-container">
+  <table>
+	  <tr>
+		  <th>Id</th>
+		  <th>Wartość</th>
+	  </tr>
+	  <% results.forEach(function(r) { %>
+		  <tr>
+			  <td><%= r.id %></td>
+			  <td><%= r.value %></td>
+		  </tr>
+	  <% }); %>
+  </table>
+  </div>
+</body>
+</html>
